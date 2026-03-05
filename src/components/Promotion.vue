@@ -6,6 +6,11 @@
           <img :src="feature.image_url" :alt="feature.title" class="feature-image">
         </div>
       </div>
+      <!-- <div class="grid grid-flow-col grid-rows-3 gap-4">
+        <div class="row-span-3 ...">01</div>
+        <div class="col-span-2 ...">02</div>
+        <div class="col-span-2 row-span-2 ...">03</div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -56,7 +61,7 @@ const features = ref<Feature[]>([
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
